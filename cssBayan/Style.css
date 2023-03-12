@@ -77,8 +77,9 @@
 
   .meme-text {
     display: block;
+    margin-right: .5em;
     width: fit-content;
-    font-size: 2em;
+    font-size: 1.3em;
   }
 
   .open-close-input {
@@ -109,4 +110,30 @@
     height: 0;
     opacity: 0;
     transition: .5s;
+  }
+
+  @media (max-width: 1024px) {
+    .wrapper {
+        max-width: 90vw;
+      }
+      
+    .meme-text {
+        font-size: 1.1em;
+      }
+    
+    .meme-image {
+        width: 70%;
+    }  
+  }
+
+  @media (max-width: 640px) {
+    .wrapper {
+        max-width: 96vw;
+      }
+    .meme-text {
+        font-size: .8em;
+      }
+      .meme-image {
+        width: 90%;
+    }    
   }
