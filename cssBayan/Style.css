@@ -47,6 +47,7 @@
 
   .meme-container:hover .meme-image {
     height: fit-content;
+    opacity: 1;
     cursor: pointer;
   }
 
@@ -75,6 +76,7 @@
 
    .open-close-input:checked ~ img{
     height: fit-content;
+    opacity: 1;
   }
 
   .open-close-icon {
@@ -93,5 +95,6 @@
     margin: 0 auto;
     width: 60%;
     height: 0;
-    transition: 1s;
+    opacity: 0;
+    transition: .5s;
   }
