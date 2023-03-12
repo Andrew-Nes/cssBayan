@@ -29,7 +29,6 @@
     transition: .3s;
   }
 
-
   .content:hover .open-close-icon {
     opacity: 1;
   }
@@ -55,6 +54,19 @@
     transform: rotate(45deg);
     transition: .3s;
   }
+
+ .meme-container:active {
+    opacity: .7;
+ }
+
+ .meme-container:active .meme-text{
+    opacity: .7;
+    color: blue;
+ }
+
+ .meme-container:active .open-close-icon{
+    opacity: 0;
+ }
 
    .text-container {
     display: flex;
