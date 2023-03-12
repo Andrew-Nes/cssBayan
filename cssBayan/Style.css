@@ -73,6 +73,10 @@
     height: 0;
   }
 
+   .open-close-input:checked ~ img{
+    height: fit-content;
+  }
+
   .open-close-icon {
     display: block;
     width: 1rem;
