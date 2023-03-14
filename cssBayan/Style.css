@@ -36,7 +36,7 @@
   .meme-container {
     display: block;
     width: 100%;
-    border-top: 2px solid gray;
+    border-top: .1em solid gray;
     padding: .5em;
   }
   
