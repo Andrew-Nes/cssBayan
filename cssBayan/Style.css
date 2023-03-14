@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: aliceblue;
+  }
+
+  .wrapper {
+    max-width: 60vw;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    margin-bottom: .5rem;
+  }
+
+
+  .content {
+    color: blue;
+  }
+
+  .content:hover .meme-text{
+    color: black;
+    transition: .3s;
+  }
+
+  .content:hover .open-close-icon {
+    opacity: 1;
+  }
+
+  .meme-container {
+    display: block;
+    width: 100%;
+    border-top: .1em solid gray;
+    padding: .5em;
+  }
+  
+  .meme-container:hover {
+    cursor: pointer;
+  }
+
+  .meme-container:hover .meme-image {
+    height: fit-content;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .meme-container:hover .open-close-icon {
+    transform: rotate(45deg);
+    transition: .3s;
+  }
+
+ .meme-container:active {
+    opacity: .7;
+ }
+
+ .meme-container:active .meme-text{
+    opacity: .7;
+    color: blue;
+ }
+
+ .meme-container:active .open-close-icon{
+    opacity: 0;
+ }
+
+   .text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .meme-text {
+    display: block;
+    margin-right: .5em;
+    width: fit-content;
+    font-size: 1.3em;
+  }
+
+  .open-close-input {
+    width: 0;
+    height: 0;
+  }
+
+   .open-close-input:checked ~ img{
+    height: fit-content;
+    opacity: 1;
+  }
+
+  .open-close-icon {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-image: url(assets/open_icon.png);
+    background-size: contain;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .meme-image {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 0;
+    opacity: 0;
+    transition: .5s;
+  }
+
+  @media (max-width: 1024px) {
+    .wrapper {
+        max-width: 90vw;
+      }
+      
+    .meme-text {
+        font-size: 1.1em;
+      }
+    
+    .meme-image {
+        width: 70%;
+    }  
+  }
+
+  @media (max-width: 640px) {
+    .wrapper {
+        max-width: 96vw;
+      }
+    .meme-text {
+        font-size: .8em;
+      }
+      .meme-image {
+        width: 90%;
+    }    
+  }
